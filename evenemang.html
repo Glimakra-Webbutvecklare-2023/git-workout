@@ -7,6 +7,7 @@
     <title>Hip Hop Fest</title>
 </head>
 <body>
+   <a href="index.html">Hem</a> <a href="galleri.html">galleri</a>
 <h1>Du är inbjuden till en hip hop fest</h1>
 
 <img src="https://i.ytimg.com/vi/qTIXsXnOMes/hqdefault.jpg" alt="">
@@ -27,17 +28,30 @@
 <p>
     Efternamn <br>
     <label for="efternamn"></label>
-    
-    <input type="text" name="efternamn" id="namn">
+    <input type="text" name="efternamn" id="efternamn">
 </p>
+
 <p>
-<i></i>Skriv här om du har några frågor</i><br>
-<textarea name="Meddelande" id="" cols="30" rows="10"></textarea>
-
-
+     <label>Ange epost adress: <br>
+        <input type="email" name="email" id="email" required>
+        </label>
 </p>
+    
 
-</fieldset>
+<p>
+<i>Skriv här om du har några frågor</i><br>
+<form>
+<textarea name="Meddelande"  cols="30" rows="10"></textarea>
+<input type="submit" value="Skicka"><br>
+
+<label for="appt">När kommer du ?</label>
+
+<input type="time" id="appt" name="appt" min="09:00" max="06:00" required />
+
+<small>Kl 9:00-23:00</small>
+
+</form>  
+</fieldset>  
 
 </body>
 </html>
